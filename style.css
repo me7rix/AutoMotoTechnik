@@ -1,0 +1,604 @@
+*, *:after, *:before {
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out;
+    /* добавим плавность переходов для всех элементов страницы*/
+}
+header:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+header {
+    position: relative;
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(other/theme.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.page {
+    width: 1300px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 8px;   
+}
+
+.name_site {
+    width: 1300px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    background-color: #ff1b1b;
+    border-radius: 0px 0px 10px 6px;
+    padding-bottom: 10px;
+    position: fixed;
+    color: white;
+    border: 1px solid black;
+}
+.menu {
+    width: 1300px;
+    margin: 0 auto;
+    height: 50px;
+    padding-top: 100px;
+    margin-top: -10px;
+    display: flex;
+    direction: row;
+    font-size: 20px;
+    background-color: #0f0e0e;
+    justify-content: space-around;
+}
+.black_edin_text {
+    font-size: 37px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+.prom_block {
+    width: 1300px;
+    height: 40px;
+}
+.point_menu {
+    width: 195px;
+    text-align: center;
+    color: white;
+}
+.link_point_menu {
+    text-decoration: none;
+    color: white;
+}
+.active_point_menu, .inactive_point_menu:hover {
+    color: #ff1b1b;
+}
+@media (max-width: 480px) {
+/*.footer {
+    height: 80px;
+    width: 1300px;
+}*/
+/* отменяем обтекание для столбцов подвала страницы */
+.footer-col {
+    float: none;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+ }
+ .footer-col:last-child {
+    text-align: center;
+    margin-bottom: 0;
+ }
+ .card_new {
+    position: static;
+}
+}
+
+.copyright {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+/*СТРАНИЦА - ГЛАВНАЯ*/
+/*БЛОК С НОВИНКАМИ*/
+#news_items_on_sale {
+    width: 1300px;
+    background-color: white;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+#news {
+    display: flex;
+    direction: row;
+    padding-top: 40px;
+    margin-left: 27px;
+}
+.card_new {
+    border: 2px solid black;
+    width: 385px;
+    height: 240px;
+    box-shadow: 0 0 5px 2px;
+    position: static;
+}
+.img_card_news {
+    height: 242px;
+    transition: 0.1s;
+}
+.img_card_news:hover {
+    transform: scale(1.05);
+}
+.three_card {
+    margin-left: -2px;
+}
+
+/*АВТО ИЛИ МОТО*/
+#block_auto_or_moto {
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ff1b1b;
+}
+.slog_auto_moto {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.white_edin_text {
+    font-size: 37px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+}
+.auto_or_moto {
+    height: 330px;
+    display: flex;
+    direction: row;
+    padding-left: 210px;
+}
+#auto, #moto {
+    box-shadow: 0 0 15px 2px;
+    width: 420px;
+    height: 264px;
+}
+.img_choise {
+    width: 420px;
+    height: 264px;
+    transition: 0.1s;
+}
+.img_choise:hover {
+    transform: scale(1.1);
+}
+.text_auto_moto {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -160px;
+    margin-left: 100px;
+}
+.links_choise {
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke: 2px #000000;
+}
+.prom_40px {
+    width: 40px;
+}
+/*СТРАНИЦА АВТО*/
+.theme_auto_moto {
+    height: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 5px 2px;
+}
+
+/*СТРОКА ПОИСКА*/
+.search {
+    padding-top: 35px;
+    padding-left: 250px;
+    height: 90px;
+    display: flex;
+    direction: row;
+}
+.pole_search {
+    height: 40px;
+    width: 700px;
+    border: 1px solid white;
+    font-size: 20px;
+}
+.btn_search {
+    background-color: #ff1b1b;
+    height: 40px;
+    border: none;
+    width: 140px;
+    transition: 0.1s;
+}
+.btn_search:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+/*осн*/
+#main {
+    background-color: white;
+    height: 700px;
+    margin-top: -15px;
+    padding-top: 40px;
+}
+.stroka_news {
+    display: flex;
+    direction: row;
+    padding-top: 50px;
+    padding-left: 40px;
+}
+.block_new {
+    width: 270px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 2px;
+    text-align: center;
+    background-color: rgb(219, 218, 218);
+}
+.name_new {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.text_new {
+    color: rgb(104, 104, 104);
+    font-size: 20px;
+    padding-top: 20px;
+}
+.img_new {
+    width: 180px;
+    padding-top: 20px;
+}
+
+/*СТРАНИЦА - АВТОМОБИЛИ и МОТОЦИКЛЫ*/
+.list_autos_motos {
+    height: 700px;
+    width: 1270px;
+}
+.name_list {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+.search_list {
+    padding-top: 23px;
+    padding-left: 250px;
+    height: 60px;
+    width: 1050px;
+    display: flex;
+    direction: row;
+    border-top: 1px solid white;
+    background-color: #0f0e0e;
+}
+.sled_and_name {
+    display: flex;
+}
+.img_sled {
+    width: 40px;
+    padding: 20px;
+    transition: 0.1s;
+}
+.img_sled:hover {
+    transform: scale(1.1);
+}
+.name_auto_moto {
+    font-size: 36px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 1090px;
+}
+.pole_search_list {
+    height: 40px;
+    width: 700px;
+    border: 1px solid white;
+    font-size: 20px;
+}
+.btn_search_list {
+    background-color: #ff1b1b;
+    height: 40px;
+    border: none;
+    width: 140px;
+    transition: 0.1s;
+}
+.btn_search_list:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.cards_techniks {
+    padding: 20px;
+}
+.title_category {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 40px;
+    color: white;
+}
+.card_techik {
+    width: 250px;
+    height: 285px;
+    border: 2px solid black;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 2px;
+    transition: 0.1s;
+}
+.card_techik:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.card_techik img {
+    width: 250px;
+    border-radius: 12px;
+}
+.link_card_technik {
+    text-decoration: none;
+}
+.name_technik {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: -30px;
+}
+.main_technik {
+    width: 1300px;
+    display: flex;
+}
+
+.info_technik {
+    width: 1000px;
+}
+
+.request {
+    width: 240px;
+    height: 120px;
+    border: 1px solid white;
+    background-color: #292b2c;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+.text_request {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+}
+.btn_request {
+    width: 220px;
+    height: 35px;
+    background-color: #ff1b1b;
+    border: 2px solid #fc0202;
+    margin: 10px;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    transition: 0.1s;
+}
+.btn_request:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+
+/* стилизация содержимого страницы */
+body {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292b2c;
+    background-color: #fff;
+} 
+  
+/* свойства модального окна по умолчанию */
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* цвет фона */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* при отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+	  pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 30px auto; /* для отображения модального окна по центру */
+  }
+}
+/* свойства для блока, содержащего контент модального окна */ 
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* свойства для заголовка модального окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+    width: 500px;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+
+
+.stroka_with_info {
+    display: flex;
+    margin: 20px;
+}
+.block_info_about_techniks {
+    width: 460px;
+    height: 292px;
+    margin: 10px;
+}
+.text_info_about_technik {
+    font-size: 22px;
+    color: white;
+}
+.img_techniks {
+    width: 458px;
+    box-shadow: 0 0 5px 2px;
+}
+
+
+
+
+
+
+.info_about_payment {
+    width: 1300px;
+    height: 500px;
+    margin-top: 30px;
+}
+.main_pay {
+    font-size: 26px;
+    color: white;
+    padding-top: 10px;
+}
+.paragraph {
+    width: 800px;
+    text-indent: 50px;
+    margin: 0 auto;
+}
+.link {
+    color: #fc0202;
+}
+
+
+
+.info_address {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.address_and_contacts {
+    display: flex;
+    justify-content: center; 
+}
+.block_address_and_contacts {
+    width: 360px;
+    height: 500px;
+    border: 1px solid white;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 2px;
+    background-color: rgb(219, 218, 218);
+}
+.block_address_and_contacts ul {
+    margin-left: 20px;
+}
+.list_metro {
+    display: flex;
+    flex-direction: column;
+}
+.point_metro {
+    display: flex;
+}
+.img_metro {
+    width: 25px;
+    padding-left: 5px;
+    padding-right: 5px;   
+}
+.text_metro {
+    font-size: 19px;
+    font-weight: bold;
+    color: black
+}
